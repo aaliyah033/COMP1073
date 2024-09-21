@@ -1,3 +1,5 @@
+//REM: const: can not be reassigned and let: can be reassigned 
+
 // VARIABLE DECLARATIONS
 
 /* STEP 1: Declare and initialize variables
