@@ -1,4 +1,5 @@
 //REM: const: can not be reassigned and let: can be reassigned 
+//REM: the # - selecting element by its ID and . - selecting class name
 
 // VARIABLE DECLARATIONS
 
@@ -11,6 +12,11 @@
 let customName;
 let randomize;
 let story;
+
+// Initialize
+customeName = document.querySelector('#customName'); //targeted the label input by the ID of customname 
+randomize = document.querySelector('.randomize'); //targets the class of randomize in label of button
+story = document.querySelector('.story'); //targets the class of story in the label p for the story paraghraphs
 
 /* STEP 3: Create the variable that contains the story string that will be modified - use var storyText to containt the following:
 'It was 94 farenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but he was not surprised — :insertx: weighs 300 pounds, and it was a hot day.'
