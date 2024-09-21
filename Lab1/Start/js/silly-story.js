@@ -21,6 +21,8 @@ story = document.querySelector('.story'); //targets the class of story in the la
 /* STEP 3: Create the variable that contains the story string that will be modified - use var storyText to containt the following:
 'It was 94 farenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but he was not surprised — :insertx: weighs 300 pounds, and it was a hot day.'
 */
+var storyText = 'It was 94 farenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but he was not surprised — :insertx: weighs 300 pounds, and it was a hot day.'; //This string that will be modified randomly to create differnet stories
+
 
 /* STEP 4: Create three arrays, insertX, insertY, and insertZ, assigning them the following array values respectively:
 Donald Trump, Jackie Chan, Santa Claus
