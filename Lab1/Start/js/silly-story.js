@@ -61,13 +61,15 @@ function result() {
 
 	/* STEP 10: If the user has typed a name in the customName field, replace the name 'Bob' in the story with whatever they typed */
 	if(customName.value != '') {
-		let newStory = newStory.split('Bob').join(customName);
+		let newStory = newStory.split('Bob').join(customName); //the split - is to split the word 'Bob' and joins the replaced name where 'Bob' was
 		console.log(newStory); //to check on console
 
 	}
 	/* STEP 11: If the metric radio button has been checked, we need to convert the temperature and mass numbers in the story */
   if(document.getElementById("metric").checked) {
 		// STEP 11a: Create a variable called weight and convert the 300lbs to kgs (1lb = 0.453592kg)
+		const weight = Math.floor(300 * 0.453592); //kept as const not to be re assigned as well as used math.floor
+		console.log(weight); //
 		// STEP 11b: Replace the string 300 pounds with the updated weight in kg
 
 		// STEP 12a: Create a variable called temp and convert °F to °C ... the formula for conversion is °C = (°F - 32) x 5/9
