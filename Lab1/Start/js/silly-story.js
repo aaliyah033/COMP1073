@@ -61,6 +61,8 @@ function result() {
 
 	/* STEP 10: If the user has typed a name in the customName field, replace the name 'Bob' in the story with whatever they typed */
 	if(customName.value != '') {
+		let newStory = newStory.split('Bob').join(customName);
+		console.log(newStory); //to check on console
 
 	}
 	/* STEP 11: If the metric radio button has been checked, we need to convert the temperature and mass numbers in the story */
