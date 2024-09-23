@@ -78,7 +78,7 @@ function result() {
 		console.log(temp); //to check 
 
 		// STEP 12b: Replace the string '94 fahrenheit' with the updated temperature in °C
-		newStory = newStory.replace('94 fahrenheit', temp + '°C');
+		newStory = newStory.replace('94 farenheit ', temp + '°C');
 
   }
 	/* STEP 13: Make the textContent property of the story variable (which references the paragraph) equal to newStory */
