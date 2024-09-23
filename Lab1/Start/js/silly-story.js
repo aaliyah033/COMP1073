@@ -55,13 +55,13 @@ function result() {
 
 	/* STEP 9: Replace the three placeholders in the newStory string — :insertx:, :inserty:, and :insertz: — with the strings stored in xItem, yItem, and zItem. Each time, be sure to update the variable newStory (with +=). You might need to do one of the above replacements twice! */
 
-	newStory = 'It was 94 farenheit outside, so :insertx:' +xItem + 'went for a walk.';
-	newStory += 'When they got to  :inserty:' + yItem + ', they stared in horror for a few moments, then :insertz:';
-	newStory += zItem + 'Bob saw the whole thing, but he was not surprised — :insertx' + xItem + 'weighs 300 pounds, and it was a hot day.';
+	newStory =  'It was 94 farenheit outside, so ' + xItem + ' went for a walk. ';
+	newStory +=  'When they got to ' + yItem + ', they stared in horror for a few moments, then ';
+	newStory += zItem + '. Bob saw the whole thing, but he was not surprised — ' + xItem + ' weighs 300 pounds, and it was a hot day.';
 
 	/* STEP 10: If the user has typed a name in the customName field, replace the name 'Bob' in the story with whatever they typed */
 	if(customName.value != '') {
-		let newStory = newStory.split('Bob').join(customName); //the split - is to split the word 'Bob' and joins the replaced name where 'Bob' was
+		let newStory = newStory.split('Bob').join(customName.value); //the split - is to split the word 'Bob' and joins the replaced name where 'Bob' was
 		console.log(newStory); //to check on console
 
 	}
