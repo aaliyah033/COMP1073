@@ -61,7 +61,7 @@ function result() {
 
 	/* STEP 10: If the user has typed a name in the customName field, replace the name 'Bob' in the story with whatever they typed */
 	if(customName.value != '') {
-		let newStory = newStory.split('Bob').join(customName.value); //the split - is to split the word 'Bob' and joins the replaced name where 'Bob' was
+		newStory = newStory.split('Bob').join(customName.value); //the split - is to split the word 'Bob' and joins the replaced name where 'Bob' was
 		console.log(newStory); //to check on console
 
 	}
