@@ -87,6 +87,7 @@ function result() {
 
 	// The following line makes the paragraph visible
 	story.style.visibility = 'visible';
+	console.log(story);
 }
 
 // EVENT LISTENERS
