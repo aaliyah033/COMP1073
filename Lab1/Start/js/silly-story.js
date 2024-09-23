@@ -14,7 +14,7 @@ let randomize;
 let story;
 
 // Initialize
-customeName = document.querySelector('#customName'); //targeted the label input by the ID of customname 
+customName = document.querySelector('#customname'); //targeted the label input by the ID of customname 
 randomize = document.querySelector('.randomize'); //targets the class of randomize in label of button
 story = document.querySelector('.story'); //targets the class of story in the label p for the story paraghraphs
 
@@ -54,9 +54,9 @@ function result() {
 	var zItem = randomValueFromArray(insertZ);
 
 	/* STEP 9: Replace the three placeholders in the newStory string — :insertx:, :inserty:, and :insertz: — with the strings stored in xItem, yItem, and zItem. Each time, be sure to update the variable newStory (with +=). You might need to do one of the above replacements twice! */
-	newStory.textContent += 'It was 94 farenheit outside, so :insertx:' +xItem + 'went for a walk.';
-	newStory.textContent += 'When they got to  :inserty:' + yItem + ', they stared in horror for a few moments, then :insertz:';
-	newStory.textContent += zItem + 'Bob saw the whole thing, but he was not surprised — :insertx' + xItem + 'weighs 300 pounds, and it was a hot day.';
+	newStory += 'It was 94 farenheit outside, so :insertx:' +xItem + 'went for a walk.';
+	newStory += 'When they got to  :inserty:' + yItem + ', they stared in horror for a few moments, then :insertz:';
+	newStory += zItem + 'Bob saw the whole thing, but he was not surprised — :insertx' + xItem + 'weighs 300 pounds, and it was a hot day.';
 	
 
 	/* STEP 10: If the user has typed a name in the customName field, replace the name 'Bob' in the story with whatever they typed */
