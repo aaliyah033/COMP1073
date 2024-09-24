@@ -54,11 +54,11 @@ function result() {
 	var zItem = randomValueFromArray(insertZ);
 
 	/* STEP 9: Replace the three placeholders in the newStory string — :insertx:, :inserty:, and :insertz: — with the strings stored in xItem, yItem, and zItem. Each time, be sure to update the variable newStory (with +=). You might need to do one of the above replacements twice! */
-
-	newStory =  'It was 94 farenheit outside, so ' + xItem + ' went for a walk. ';
-	newStory +=  'When they got to ' + yItem + ', they stared in horror for a few moments, then ';
-	newStory += zItem + '. Bob saw the whole thing, but he was not surprised — ' + xItem + ' weighs 300 pounds, and it was a hot day.';
-
+    // we have to use use - replaceall
+	newStory = newStory.replaceAll(':insertx:', xItem);
+	newStory = newStory.replaceAll(':inserty:', yItem);
+	newStory = newStory.replaceAll(':insertz:', zItem);
+	
 	/* STEP 10: If the user has typed a name in the customName field, replace the name 'Bob' in the story with whatever they typed */
 	if(customName.value != '') {
 		newStory = newStory.split('Bob').join(customName.value); //the split - is to split the word 'Bob' and joins the replaced name where 'Bob' was
