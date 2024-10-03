@@ -49,3 +49,11 @@ function storyColumn(assignedNumber){
     }
     return myArray; //returnes after all cases are pressed.
 }
+
+//my notes: After storing arrays and randomvalueArray for phrase/words ---- should move to the three buttons (restart,view, & suprise)
+
+//STEP 5: function for story - this function for viewing the story after random story/phrase pressed.
+
+//STEP 6: function for reset - this function is for reseting the whole game and start again.
+
+//STEP 7: function for suprise - this function is for a random words kept together wthout pressing the columns/rows buttons, just randomly generates. 
