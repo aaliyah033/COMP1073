@@ -15,3 +15,6 @@ const column5 = ['on the moon', 'on the chair', 'in my spaghetti', 'in my soup',
 function randomValueArray(array) {
     return array[Math.floor(Math.random() * array.length)];
     }
+
+//STEP 4: After array a function that selects the randomValueArray method to randomly select words/phrases based on button/row
+//my notes: use switch for easier action, which column selected and ranomize words/phrases.
