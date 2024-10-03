@@ -10,3 +10,8 @@ const column3 = ['a funny', 'a scary', 'a goofy', 'a slimy', 'a barking', 'a fat
 const column4 = ['goat', 'monkey', 'fish', 'cow', 'frog', 'bug', 'worm'];
 const column5 = ['on the moon', 'on the chair', 'in my spaghetti', 'in my soup', 'on the grass', 'in my shoes'];
 
+//STEP 3: function for random word of the array 
+//my notes: used randomValueArray from step 2 this will this function and pass it an array, understanding it will return one of the elements of that array randomly
+function randomValueArray(array) {
+    return array[Math.floor(Math.random() * array.length)];
+    }
