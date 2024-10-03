@@ -18,3 +18,34 @@ function randomValueArray(array) {
 
 //STEP 4: After array a function that selects the randomValueArray method to randomly select words/phrases based on button/row
 //my notes: use switch for easier action, which column selected and ranomize words/phrases.
+function storyColumn(assignedNumber){
+    let myArray =[]; //assigne array to store the phrase/words 
+    switch (assignedNumber) {
+        //case 1 - assigned column1 to select word/phrase(ranomValueArray) from when button is pressed.
+        case 1:
+            myArray[0] = randomValueArray(column1);
+            console.log(myArray);
+            break; 
+        //case 2 - assigned column1 to select word/phrase(ranomValueArray) from when button is pressed.
+        case 2:
+            myArray[0] = randomValueArray(column2);
+            console.log(myArray);
+            break;
+        //case 3 - assigned column1 to select word/phrase(ranomValueArray) from when button is pressed.
+        case 3:
+            myArray[0] = randomValueArray(column3);
+            console.log(myArray);
+            break;
+        //case 4 - assigned column1 to select word/phrase(ranomValueArray) from when button is pressed.
+        case 4:
+            myArray[0] = randomValueArray(column4);
+            console.log(myArray);
+            break;
+        //case 5 - assigned column1 to select word/phrase(ranomValueArray) from when button is pressed.
+        case 5:
+            myArray[0] = randomValueArray(column5);
+            console.log(myArray);
+            break;     
+    }
+    return myArray; //returnes after all cases are pressed.
+}
