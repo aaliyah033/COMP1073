@@ -60,7 +60,7 @@ function viewRandomStory(){
 
 
 //STEP 6: function for reset - this function is for reseting the whole game and start again.
-function resetGame(){
+function resetGameStory(){
     storymaker.textContent = ''; // this will show texts empty now.
     console.log(story); //for me to view on my console
     return storymaker; //return the emptytext
