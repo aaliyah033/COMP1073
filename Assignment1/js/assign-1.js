@@ -68,3 +68,21 @@ function resetGameStory(){
    
 
 //STEP 7: function for suprise - this function is for a random words kept together wthout pressing the columns/rows buttons, just randomly generates. 
+function supriseRandomStory(){
+   //my notes: use randomValueArray() to generate values for new variables.
+   //this will put random phrases pick from each column
+   storymaker = [
+    randomValueArray(column1),
+    randomValueArray(column2),
+    randomValueArray(column3),
+    randomValueArray(column4),
+    randomValueArray(column5)
+   ];
+   console.log(storymaker); //for me to view on my console
+
+   //now this will make the story sentence visible.
+   storymaker.style.visibility ='visible'; 
+   console.log(storymaker); //for me to view on my console
+
+   return storymaker;
+}
