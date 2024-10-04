@@ -53,6 +53,11 @@ function storyColumn(assignedNumber){
 //my notes: After storing arrays and randomvalueArray for phrase/words ---- should move to the three buttons (restart,view, & suprise)
 
 //STEP 5: function for story - this function for viewing the story after random story/phrase pressed.
+function viewRandomStory(){
+    storymaker.textContent = story.join(''); // joins the phrases/words from storyColumn and sets textCOmtent in the storymaker, will join all the phrases into a story sentence.
+    console.log(storymaker); //for me to view on my console
+}
+
 
 //STEP 6: function for reset - this function is for reseting the whole game and start again.
 
