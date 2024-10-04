@@ -60,5 +60,11 @@ function viewRandomStory(){
 
 
 //STEP 6: function for reset - this function is for reseting the whole game and start again.
+function resetGame(){
+    storymaker.textContent = ''; // this will show texts empty now.
+    console.log(story); //for me to view on my console
+    return storymaker; //return the emptytext
+}
+   
 
 //STEP 7: function for suprise - this function is for a random words kept together wthout pressing the columns/rows buttons, just randomly generates. 
