@@ -90,3 +90,5 @@ function supriseRandomStory(){
 
 //my own notes: now after creating all functions will have to link with the buttons. (now work with the buttons)
 
+//STEP 8: function to for the buttons and with event listeners
+//my notes: 
