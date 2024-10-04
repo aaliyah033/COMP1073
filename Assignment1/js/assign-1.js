@@ -55,6 +55,7 @@ function storyColumn(assignedNumber){
 //STEP 5: function for story - this function for viewing the story after random story/phrase pressed.
 function viewRandomStory(){
     storymaker.textContent = story.join(''); // joins the phrases/words from storyColumn and sets textCOmtent in the storymaker, will join all the phrases into a story sentence.
+    storymaker.style.visibility ='visible';   //now this will make the story sentence visible.
     console.log(storymaker); //for me to view on my console
 }
 
@@ -86,3 +87,6 @@ function supriseRandomStory(){
 
    return storymaker;
 }
+
+//my own notes: now after creating all functions will have to link with the buttons. (now work with the buttons)
+
