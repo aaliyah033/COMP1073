@@ -112,6 +112,11 @@ function storyMakerGame(){
     button5.onclick = function(){
         selectedRowColumn(5)
     }    
+
+    //8b: now add eventlistener for the buttons (reset, suprise, & view)
+    document.querySelector('.view').addEventListener('click',viewRandomStory);
+    document.querySelector('.reset').addEventListener('click',resetGameStory);
+    document.querySelector('.suprise').addEventListener('click',supriseRandomStory);
 }
 
 
