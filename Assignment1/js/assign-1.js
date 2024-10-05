@@ -97,6 +97,12 @@ function storyMakerGame(){
     //8a. first target the buttons with the functions
     //my notes: re: from the targetted game (.game-story) to target onclick
 
+    const firstRow = document.getElementById('button1');
+    const secondRow = document.getElementById('button2');
+    const thirdRow = document.getElementById('button3');
+    const fourthRow = document.getElementById('button4');
+    const fifthRow = document.getElementById('button5');
+   
     button1.onclick = function(){
         selectedRowColumn(1)
     }
