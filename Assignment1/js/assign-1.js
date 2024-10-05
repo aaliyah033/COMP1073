@@ -2,6 +2,8 @@
 const storymaker = document.querySelector('.story');
 const game = document.querySelector('.game-story');
 
+let myArray =[]; //assigne array to store the phrase/words 
+
 //STEP 2: array containing the column/row with the words
 //added words from the book 
 const column1 = ['the turket', 'Mom', 'Dad', 'The dog', 'My teacher', 'The elephant', 'The cat'];
@@ -18,8 +20,7 @@ function randomValueArray(array) {
 
 //STEP 4: After array a function that selects the randomValueArray method to randomly select words/phrases based on button/row
 //my notes: use switch for easier action, which column selected and ranomize words/phrases.
-function storyColumn(assignedNumber){
-    let myArray =[]; //assigne array to store the phrase/words 
+function selectedRowColumn(assignedNumber){ 
     switch (assignedNumber) {
         //case 1 - assigned column1 to select word/phrase(ranomValueArray) from when button is pressed.
         case 1:
@@ -28,22 +29,22 @@ function storyColumn(assignedNumber){
             break; 
         //case 2 - assigned column1 to select word/phrase(ranomValueArray) from when button is pressed.
         case 2:
-            myArray[0] = randomValueArray(column2);
+            myArray[1] = randomValueArray(column2);
             console.log(myArray);
             break;
         //case 3 - assigned column1 to select word/phrase(ranomValueArray) from when button is pressed.
         case 3:
-            myArray[0] = randomValueArray(column3);
+            myArray[2] = randomValueArray(column3);
             console.log(myArray);
             break;
         //case 4 - assigned column1 to select word/phrase(ranomValueArray) from when button is pressed.
         case 4:
-            myArray[0] = randomValueArray(column4);
+            myArray[3] = randomValueArray(column4);
             console.log(myArray);
             break;
         //case 5 - assigned column1 to select word/phrase(ranomValueArray) from when button is pressed.
         case 5:
-            myArray[0] = randomValueArray(column5);
+            myArray[4] = randomValueArray(column5);
             console.log(myArray);
             break;     
     }
@@ -54,16 +55,16 @@ function storyColumn(assignedNumber){
 
 //STEP 5: function for story - this function for viewing the story after random story/phrase pressed.
 function viewRandomStory(){
-    storymaker.textContent = story.join(''); // joins the phrases/words from storyColumn and sets textCOmtent in the storymaker, will join all the phrases into a story sentence.
-    storymaker.style.visibility ='visible';   //now this will make the story sentence visible.
+    storymaker.textContent = myArray.join(' '); // joins the phrases/words from storyColumn and sets textCOmtent in the storymaker, will join all the phrases into a story sentence.
     console.log(storymaker); //for me to view on my console
 }
 
 
 //STEP 6: function for reset - this function is for reseting the whole game and start again.
 function resetGameStory(){
-    storymaker.textContent = ''; // this will show texts empty now.
-    console.log(story); //for me to view on my console
+     myArray =[]; //assigne array to store the phrase/words 
+    storymaker.textContent = ' '; // this will show texts empty now.
+    console.log(storymaker); //for me to view on my console
     return storymaker; //return the emptytext
 }
    
@@ -72,20 +73,22 @@ function resetGameStory(){
 function supriseRandomStory(){
    //my notes: use randomValueArray() to generate values for new variables.
    //this will put random phrases pick from each column
-   storymaker = [
+   myArray = [
     randomValueArray(column1),
     randomValueArray(column2),
     randomValueArray(column3),
     randomValueArray(column4),
     randomValueArray(column5)
    ];
-   console.log(storymaker); //for me to view on my console
+   console.log(myArray); //for me to view on my console
 
+   storymaker.textContent = myArray.join(' '); // joins the phrases/words from storyColumn and
    //now this will make the story sentence visible.
    storymaker.style.visibility ='visible'; 
-   console.log(storymaker); //for me to view on my console
-
-   return storymaker;
+   console.log(myArray); //for me to view on my console
+   
+   return supriseRandomStory;
+   
 }
 
 //my own notes: now after creating all functions will have to link with the buttons. (now work with the buttons)
@@ -121,7 +124,7 @@ function storyMakerGame(){
     }    
 
     //8b: now add eventlistener for the buttons (reset, suprise, & view)
-    document.querySelector('.view').addEventListener('click',viewRandomStory);
+    document.querySelector('.start').addEventListener('click',viewRandomStory);
     document.querySelector('.reset').addEventListener('click',resetGameStory);
     document.querySelector('.suprise').addEventListener('click',supriseRandomStory);
 
@@ -130,7 +133,7 @@ function storyMakerGame(){
     console.log(storyMakerBakcground); 
     return storyMakerBakcground; 
 }
-storymakerBakcground(); //calls the function
+storyMakerGame(); //calls the function
 
 
 
