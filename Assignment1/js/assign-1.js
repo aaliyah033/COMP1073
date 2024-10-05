@@ -99,28 +99,34 @@ function supriseRandomStory(){
 function storyMakerGame(){
     //8a. first target the buttons with the functions
     //my notes: re: from the targetted game (.game-story) to target onclick
-    
+
     const button1 = document.getElementById('button1');
     const button2 = document.getElementById('button2');
     const button3 = document.getElementById('button3');
     const button4 = document.getElementById('button4');
     const button5 = document.getElementById('button5');
     
-   
+   //add the style.color= 'color'; ---- function color
+    
     button1.onclick = function(){
         selectedRowColumn(1)
+        button1.style.color = 'purple'
     }
     button2.onclick = function(){
         selectedRowColumn(2)
+        button2.style.color = 'blue'
     }
     button3.onclick = function(){
         selectedRowColumn(3)
+        button3.style.color = 'green'
     }
     button4.onclick = function(){
         selectedRowColumn(4)
+        button4.style.color = 'orange'
     }
     button5.onclick = function(){
         selectedRowColumn(5)
+        button5.style.color = 'pink'
     }    
 
     //8b: now add eventlistener for the buttons (reset, suprise, & view)
