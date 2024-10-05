@@ -91,4 +91,29 @@ function supriseRandomStory(){
 //my own notes: now after creating all functions will have to link with the buttons. (now work with the buttons)
 
 //STEP 8: function to for the buttons and with event listeners
-//my notes: 
+//my notes: used onclick for the button 
+
+function storyMakerGame(){
+    //8a. first target the buttons with the functions
+    //my notes: re: from the targetted game (.game-story) to target onclick
+
+    button1.onclick = function(){
+        selectedRowColumn(1)
+    }
+    button2.onclick = function(){
+        selectedRowColumn(2)
+    }
+    button3.onclick = function(){
+        selectedRowColumn(3)
+    }
+    button4.onclick = function(){
+        selectedRowColumn(4)
+    }
+    button5.onclick = function(){
+        selectedRowColumn(5)
+    }    
+}
+
+
+
+
