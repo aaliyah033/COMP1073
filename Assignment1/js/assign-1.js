@@ -117,7 +117,13 @@ function storyMakerGame(){
     document.querySelector('.view').addEventListener('click',viewRandomStory);
     document.querySelector('.reset').addEventListener('click',resetGameStory);
     document.querySelector('.suprise').addEventListener('click',supriseRandomStory);
+
+    //8c: set story/sentence background color
+    let storyMakerBakcground = window.getComputedStyle(storymaker).getPropertyValue('background-color');  
+    console.log(storyMakerBakcground); 
+    return storyMakerBakcground; 
 }
+storymakerBakcground(); //calls the function
 
 
 
