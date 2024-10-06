@@ -1,6 +1,7 @@
 //STEP 1: declare & initialize
 const storymaker = document.querySelector('.story');
-const game = document.querySelector('.game-story');
+const game = document.querySelector('.game-storyMaker');
+
 
 let myArray =[]; //assigne array to store the phrase/words 
 

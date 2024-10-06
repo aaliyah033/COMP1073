@@ -1,5 +1,114 @@
+/* google fonts 
+Jacquarda Bastarda 9
+Orbitron
+Sixtyfour Convergence
+*/
+html {
+    scroll-behavior: smooth;
+    background-color: goldenrod;
+    border: none;
+    cursor: pointer;
+}
 
+h1,h2,h3, p{
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Orbitron', sans-serif;
+}
+h1{
+    font-family: 'Sixtyfour Convergence', serif;
+    font-size: 2rem;
+ 
+}
+h3{
+    font-size: 2.5rem;
+}
 
+/* for header */
 header{
+    background-color: #0e61af;
+    padding: 30px;
+    text-align: center;
 
 }
+/* for body */
+body{
+    margin: 0;
+    padding: 0;
+    border:none;
+}
+/* for the main */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: auto;
+    max-width: 800px;
+}
+
+#game-storyMaker button{
+    width: 120px;
+    height: 100px;
+    font-size: 1.0rem;
+    background-color: rgb(208, 225, 225);
+    border: none;
+    padding: 15px;
+    margin: 5px;
+
+}
+/* for the buttons start,reset,suprise */
+.start{
+    width: 120px;
+    height: 90px;
+    padding: 15px;
+    margin: 5px;
+    background-color: rgb(39, 208, 180);
+    border: none;
+}
+.reset{
+    width: 120px;
+    height: 90px;
+    padding: 15px;
+    margin: 5px;
+    background-color: rgb(21, 128, 21);
+    border: none;
+}
+.suprise{
+    width: 120px;
+    height: 90px;
+    padding: 15px;
+    margin: 5px;
+    background-color: rgb(214, 16, 16);
+    border: none;
+}
+/* for the story section */
+.story{
+    text-align: center; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 90px;
+    padding: 20px;
+    margin: 26px;
+    background-color: rgb(246, 243, 243);
+    border: none;
+    color: black;
+    font-size: 2.5rem; 
+    
+}
+
+em{
+    font-family: 'Jacquarda Bastarda 9';
+    font-size: 1.2em;
+    font-style: bold;
+}
+/* for footer */
+
+footer{
+    background-color: #0e61af;
+    padding: 50px;
+    text-align: center;
+    
+    }
