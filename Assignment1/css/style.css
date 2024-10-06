@@ -55,6 +55,7 @@ main{
     border: none;
     padding: 15px;
     margin: 5px;
+    cursor: pointer;
 
 }
 /* for the buttons start,reset,suprise */
@@ -65,6 +66,7 @@ main{
     margin: 5px;
     background-color: rgb(39, 208, 180);
     border: none;
+    cursor: pointer;
 }
 .reset{
     width: 120px;
@@ -73,6 +75,7 @@ main{
     margin: 5px;
     background-color: rgb(21, 128, 21);
     border: none;
+    cursor: pointer;
 }
 .suprise{
     width: 120px;
@@ -81,6 +84,7 @@ main{
     margin: 5px;
     background-color: rgb(214, 16, 16);
     border: none;
+    cursor: pointer;
 }
 /* for the story section */
 .story{
