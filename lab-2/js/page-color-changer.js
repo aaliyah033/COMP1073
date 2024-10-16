@@ -27,15 +27,15 @@ redColorSlide.addEventListener('input', changeColor) //this event handler will c
 greenColorSlide.addEventListener('input', changeColor) //this event handler will call the changeColor function
 blueColorSlide.addEventListener('input', changeColor) //this event handler will call the changeColor function
 
-//STEP 3: Building a function
+//STEP 3: Building a function and STEP 4: Testing the application 
 //Build one or more functions that change the background-color property value of the page body (or HTML element), based on the values of the three range sliders (hint - we changed the background-color of the page in a prior lesson).
 //from conditions function (setWeather() used the .value method)
 function colorChange(){
-    let slideRed = redColorSlide.value //this will store the value from the inpul label - for red 
+    var slideRed = redColorSlide.value //this will store the value from the inpul label - for red 
     console.log(slideRed);
-    let slideGreen = greenColorSlide.value //this will store the value from the inpul label - for green
+    var slideGreen = greenColorSlide.value //this will store the value from the inpul label - for green
     console.log(slideGreen);
-    let slideBlue = blueColorSlide.value //this will store the value from the inpul label - for blue
+    var slideBlue = blueColorSlide.value //this will store the value from the inpul label - for blue
     console.log(slideBlue);
 
     // hint used from last class event.js - chnaging the background color 
@@ -44,4 +44,9 @@ function colorChange(){
     document.body.style.backgroundColor = backgroundColor; 
     console.log(backgroundColor); //so i could check if it's working
 }
+colorChange(); 
+
+
+
+
 
