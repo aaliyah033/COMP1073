@@ -16,9 +16,10 @@
 
 //STEP 1: Declare and initialize
 // Declare and initialize some constants for the input slider elements, the page body and any other HTML element you think you need to manipulate.
-let redColorSlide = document.querySelector('#red') //this targets the label for red
-let greenColorSlide = document.querySelector('#green') //this targets the label for green
-let blueColorSlide = document.querySelector('#blue') //this targets the label for blue
+let bodySlide = document.querySelector('body');
+let redColorSlide = document.querySelector('#red'); //this targets the label for red
+let greenColorSlide = document.querySelector('#green'); //this targets the label for green
+let blueColorSlide = document.querySelector('#blue'); //this targets the label for blue
 
 //STEP 2: Building an event handlers
 // Build one or more event handlers to call a function when the user changes the value of one of the range sliders (hint - look up the code for the weather page where we built a slider for the wind speed).
