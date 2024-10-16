@@ -14,3 +14,8 @@
 //     Comment all major code blocks or pieces of functionality.
 //     Do your best and have fun - resist the temptation to simply look for a complete solution online or from generative AI - this is your opportunity to collaborate with your peers and to try to apply some of the things that you have learned.
 
+//STEP 1: Declare and initialize
+// Declare and initialize some constants for the input slider elements, the page body and any other HTML element you think you need to manipulate.
+let redColorSlide = document.querySelector('#red') //this targets the label for red
+let greenColorSlide = document.querySelector('#green') //this targets the label for green
+let blueColorSlide = document.querySelector('#blue') //this targets the label for blue
