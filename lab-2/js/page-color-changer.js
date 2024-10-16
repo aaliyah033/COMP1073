@@ -19,3 +19,11 @@
 let redColorSlide = document.querySelector('#red') //this targets the label for red
 let greenColorSlide = document.querySelector('#green') //this targets the label for green
 let blueColorSlide = document.querySelector('#blue') //this targets the label for blue
+
+//STEP 2: Building an event handlers
+// Build one or more event handlers to call a function when the user changes the value of one of the range sliders (hint - look up the code for the weather page where we built a slider for the wind speed).
+//used input because the label is input
+redColorSlide.addEventListener('input', changeColor) //this event handler will call the changeColor function
+greenColorSlide.addEventListener('input', changeColor) //this event handler will call the changeColor function
+blueColorSlide.addEventListener('input', changeColor) //this event handler will call the changeColor function
+
