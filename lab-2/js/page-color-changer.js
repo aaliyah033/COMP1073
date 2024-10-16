@@ -32,7 +32,16 @@ blueColorSlide.addEventListener('input', changeColor) //this event handler will 
 //from conditions function (setWeather() used the .value method)
 function colorChange(){
     let slideRed = redColorSlide.value //this will store the value from the inpul label - for red 
+    console.log(slideRed);
     let slideGreen = greenColorSlide.value //this will store the value from the inpul label - for green
+    console.log(slideGreen);
     let slideBlue = blueColorSlide.value //this will store the value from the inpul label - for blue
+    console.log(slideBlue);
+
+    // hint used from last class event.js - chnaging the background color 
+    const backgroundColor = 'rgb(' + slideRed + ', ' + slideGreen + ', ' + slideBlue + ')';
+    console.log(backgroundColor); //so i could check if it's working
+    document.body.style.backgroundColor = backgroundColor; 
+    console.log(backgroundColor); //so i could check if it's working
 }
 
