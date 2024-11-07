@@ -20,4 +20,13 @@ class Smoothie {
         this.booster = booster;
         this.ice = ice;
     }
+
+   //NOTES: from coffee.js - reference class codes line 13
+   getOrderSmoothie(){
+    //STEP THREE: adding this will be as the string variable for after user choses then it will be stored after this
+    var smoothieInformation ="This is your order details:";
+
+    //STEP FOUR: an if statement that will checks if user has pressed on the buttons, and since i have some ino for user to choose i kept switch statement so it chechks which is chosen and will add statement to the string variable 
+   }
 }
+
