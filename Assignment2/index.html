@@ -25,16 +25,105 @@
 
     <!-- adding two sections left for the output and right for the form -->
     <section class="container" >
+        <!-- left side  -->
         <div class="left-side" id="output-side">
             <h2 >Your Order</h2>
             <p id="smoothie-order"></p>
             <!-- smoothie image be on this side -->
             <img src="" alt="smoothie-image">
         </div>
+
+        <!-- right side -->
+        <div class="right-side" id="right-side">
+            <!-- adding form -->
+            <form id="smoothie-form">
+                <div id="chosen-size">
+                <label>Choose a size:</label>
+                <input type="radio" id="size" name="size" value="small" checked> 
+                <label for="size"> Small</label>
+                <input type="radio" id="size" name="size" value="medium"> 
+                <label for="size"> Medium</label>
+                <input type="radio" id="size" name="size" value="large"> 
+                <label for="size"> Large</label>
+                </div>
+                <div id="chosen-fruit">
+                    <label>Choose a fruit:</label>
+                    <input type="checkbox" id="banana" name="fruit" value="banana">
+                    <label for="banana"> Banana</label>
+                    <input type="checkbox" id="strawberry" name="fruit" value="strawberry">
+                    <label for="strawberry"> Strawberry</label>
+                    <input type="checkbox" id="blueberry" name="fruit" value="blueberry">
+                    <label for="blueberry"> Blueberry</label>
+                    <input type="checkbox" id="fruits" name="fruit" value="mango"> 
+                    <label for="fruits"> Mango</label>
+                    <input type="checkbox" id="fruits" name="fruit" value="green"> 
+                    <label for="fruits"> Green</label>
+                    <input type="checkbox" id="fruits" name="fruit" value="chocolate"> 
+                    <label for="fruits"> Chocolate</label>
+                </div>
+                <div id="chosen-topping">
+                    <label>Choose a topping:</label>
+                    <input type="checkbox" id="topping" name="topping" value="chai-seeds"> 
+                    <label for="topping">Chai Seeds</label>
+                    <input type="checkbox" id="topping" name="topping" value="tapioca"> 
+                    <label for="topping">Tapioca</label>
+                    <input type="checkbox" id="topping" name="topping" value="mango-chunks"> 
+                    <label for="topping">Mango Chunks</label>
+                    <input type="checkbox" id="topping" name="topping" value="grass-jelly"> 
+                    <label for="topping">Grass Jelly</label>
+                </div>
+                <div class="chosen-Liquid">
+                    <label>Choose a Liquid:</label>
+                    <input type="radio" id="liquid" name="liquid" value="lactose-free milk" checked> 
+                    <label for="liquid">Lactose-Free Milk</label>
+                    <input type="radio" id="liquid" name="liquid" value="full-milk"> 
+                    <label for="liquid">Full Milk</label>
+                    <input type="radio" id="liquid" name="liquid" value="almond-milk"> 
+                    <label for="liquid">Almond Milk</label>
+                    <input type="radio" id="liquid" name="liquid" value="oat-milk"> 
+                    <label for="liquid">Oat Milk</label>
+                    <input type="radio" id="liquid" name="liquid" value="soy-milk"> 
+                    <label for="liquid">Soy Milk</label>
+                    <input type="radio" id="liquid" name="liquid" value="coconut-milk"> 
+                    <label for="liquid">Coconut Milk</label>
+                </div>
+                <div class="chosen-booster">
+                    <label>Choose a booster:</label>
+                    <input type="checkbox" id="booster" name="booster" value="Combo"> 
+                    <label for="booster">Combo </label>
+                    <input type="checkbox" id="booster" name="booster" value="Energy"> 
+                    <label for="booster">Energy</label>
+                    <input type="checkbox" id="booster" name="booster" value="Vitamin">
+                    <label for="booster">Vitamin</label>
+                    <input type="checkbox" id="booster" name="booster" value="Power">
+                    <label for="booster">Power</label>
+                    <input type="checkbox" id="booster" name="booster" value="Density">
+                    <label for="booster">Density</label>
+                </div>
+                <div class="chosen-Ice">
+                    <label>Choose a Ice:</label>
+                    <input type="radio" id="ice" name="ice" value="no-ice" checked> 
+                    <label for="ice">No Ice</label>
+                    <input type="radio" id="ice" name="ice" value="regular-ice"> 
+                    <label for="ice">Regular Ice</label>
+                    <input type="radio" id="ice" name="ice" value="extra-ice"> 
+                    <label for="ice">Extra Ice</label>
+                </div>
+                <button type="button" id="order">Order Here</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="product-icons">
+          <img src="" alt="No Sugar Added">
+          <img src="" alt="Plant-Based">
+          <img src="" alt="Halal">
+          <img src="" alt="Gluten-Free">
     </section>
     </main>
     <footer>
         <!-- will add a footer info -->
+        <h4>Thank you for ordering and choosing us</h4>
     </footer>
     
 </body>
