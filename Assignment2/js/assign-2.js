@@ -68,6 +68,7 @@ class Smoothie {
 
             default:
                 smoothieInformation += `Your smoothie fruit is ${fruit} `;         
+        }
     }
     //Targeting the topping
     if(topping){
@@ -154,7 +155,36 @@ class Smoothie {
         }
     }
     // STEP FIVE: to make the paraghraph visible from the user chose
+   //NOTE: updating the paraghraph using textCOntent and visability
+   //from line 31-  <p id="smoothie-order"></p>
+   document.getElementById("smoothie-order").textContent = smoothieInformation;
+   document.getElementById("smoothie-order").style.visability = "visible";
+   console.log(smoothieInformation); //show on console
+    }
 }
-}
-}
+
+//STEP SIX: Targeting the order button 
+document.getElementById("order").addEventListener("click", function(){
+    //STEP SEVEN: as well as taregting the clicked values
+    //NOTE: using the values from the radio and checkbox
+    var fruit = document.querySelector('input[name="fruit"]');
+    var booster = document.querySelector('input[name="booster"]');
+    var ice = document.querySelector('input[name="ice"]');
+    var quantity = document.querySelector('input[name="quantity"]');
+    var topping = document.querySelector('input[name="topping"]');
+    var liquid = document.querySelector('input[name="liquid"]');
+    var size = document.querySelector('input[name="size"]');
+    
+    // STEP EIGHT: after being accesed from the objects shows order information
+    //from class Smoothie Instatiate  based on the  constructor - reference from coffee.js (step2)
+    let smoothie = new Smoothie(size,fruit,liquid,topping,booster,ice,quantity);
+    smoothie.getOrderSmoothie();
+  
+
+});
+
+    
+
+
+
 
