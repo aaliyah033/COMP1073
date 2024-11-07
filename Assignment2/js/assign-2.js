@@ -29,118 +29,118 @@ class Smoothie {
     //STEP FOUR: an if statement that will checks if user has pressed on the buttons, and since i have some ino for user to choose i kept switch statement so it chechks which is chosen and will add statement to the string variable 
     
     //Targeting the size  
-    if(size){
-        switch(size){
+    if(this.size){
+        switch(this.size){
             case 'small':
-                smoothieInformation += `Your smoothie size is ${size} `;
+                smoothieInformation += `Your smoothie size is ${this.size} `;
                 break;
             case 'medium':
-                smoothieInformation += `Your smoothie size is ${size} `;
+                smoothieInformation += `Your smoothie size is ${this.size} `;
                 break;
             case 'large':
-                smoothieInformation += `Your smoothie size is ${size} `;
+                smoothieInformation += `Your smoothie size is ${this.size} `;
                 break;
             default:
-                smoothieInformation += `Your smoothie size is ${size} `;
+                smoothieInformation += `Your smoothie size is ${this.size} `;
         }
     }
     //Targeting the fruit
-    if(fruit){
-        switch(fruit){
+    if(this.fruit){
+        switch(this.fruit){
             case 'banana':
-                smoothieInformation += `Your smoothie fruit is ${fruit} `;
+                smoothieInformation += `Your smoothie fruit is ${this.fruit} `;
                 break;
             case 'strawberry':
-                smoothieInformation += `Your smoothie fruit is ${fruit} `;
+                smoothieInformation += `Your smoothie fruit is ${this.fruit} `;
                 break;
             case 'mango':
-                smoothieInformation += `Your smoothie fruit is ${fruit} `;
+                smoothieInformation += `Your smoothie fruit is ${this.fruit} `;
                 break;
             case 'blueberry':
-                smoothieInformation += `Your smoothie fruit is ${fruit} `;
+                smoothieInformation += `Your smoothie fruit is ${this.fruit} `;
                 break;
             case 'green':
-                smoothieInformation += `Your smoothie fruit is ${fruit} `;
+                smoothieInformation += `Your smoothie fruit is ${this.fruit} `;
                 break;
             case 'chocolate':
-                smoothieInformation += `Your smoothie fruit is ${fruit} `;
+                smoothieInformation += `Your smoothie fruit is ${this.fruit} `;
                 break;
 
             default:
-                smoothieInformation += `Your smoothie fruit is ${fruit} `;         
+                smoothieInformation += `Your smoothie fruit is ${this.fruit} `;         
         }
     }
     //Targeting the topping
-    if(topping){
-        switch(topping){
+    if(this.topping){
+        switch(this.topping){
             case 'chai-seeds':
-                smoothieInformation += `Your smoothie protein is ${topping} `;
+                smoothieInformation += `Your smoothie protein is ${this.topping} `;
                 break;
             case 'tapioca':
-                smoothieInformation += `Your smoothie protein is ${topping} `;
+                smoothieInformation += `Your smoothie protein is ${this.topping} `;
                 break;
             case 'mango-chunks':
-                smoothieInformation += `Your smoothie protein is ${topping} `;
+                smoothieInformation += `Your smoothie protein is ${this.topping} `;
                 break;
             case 'grass-jelly':
-                smoothieInformation += `Your smoothie protein is ${topping} `;
+                smoothieInformation += `Your smoothie protein is ${this.topping} `;
                 break;
             default:
-                smoothieInformation += `Your smoothie protein is ${topping} `;      
+                smoothieInformation += `Your smoothie protein is ${this.topping} `;      
         }
 
     }
     //Targeting the liquid
-    if(liquid){
-        switch(liquid){
+    if(this.liquid){
+        switch(this.liquid){
             case 'lactose-free milk':
-                smoothieInformation += `Your smoothie liquid is ${liquid} `;
+                smoothieInformation += `Your smoothie liquid is ${this.liquid} `;
                 break;
             case 'full-milk':
-                smoothieInformation += `Your smoothie liquid is ${liquid} `;
+                smoothieInformation += `Your smoothie liquid is ${this.liquid} `;
                 break;
             case 'almond-milk':
-                smoothieInformation += `Your smoothie liquid is ${liquid} `;
+                smoothieInformation += `Your smoothie liquid is ${this.liquid} `;
                 break;
             case 'oat-milk':
-                smoothieInformation += `Your smoothie liquid is ${liquid} `;
+                smoothieInformation += `Your smoothie liquid is ${this.liquid} `;
                 break;
             case 'soy-milk':
-                smoothieInformation += `Your smoothie liquid is ${liquid} `;
+                smoothieInformation += `Your smoothie liquid is ${this.liquid} `;
                 break;
             case 'coconut-milk':
-                smoothieInformation += `Your smoothie liquid is ${liquid} `;
+                smoothieInformation += `Your smoothie liquid is ${this.liquid} `;
                 break;
             default:
-                smoothieInformation += `Your smoothie liquid is ${liquid} `;
+                smoothieInformation += `Your smoothie liquid is ${this.liquid} `;
 
         }
     }
     //Targeting the booster
-    if(booster){
-        switch(booster){
+    if(this.booster){
+        switch(this.booster){
             case 'Combo':
-                smoothieInformation += `Your smoothie booster is ${booster} `;
+                smoothieInformation += `Your smoothie booster is ${this.booster} `;
                 break;
             case 'Energy':
-                smoothieInformation += `Your smoothie booster is ${booster} `;
+                smoothieInformation += `Your smoothie booster is ${this.booster} `;
                 break;
             case 'Vitamin':
-                smoothieInformation += `Your smoothie booster is ${booster} `;
+                smoothieInformation += `Your smoothie booster is ${this.booster} `;
                 break;
             case 'Power':
-                smoothieInformation += `Your smoothie booster is ${booster} `;
+                smoothieInformation += `Your smoothie booster is ${this.booster} `;
                 break;
             case 'Density':
-                smoothieInformation += `Your smoothie booster is ${booster} `;
+                smoothieInformation += `Your smoothie booster is ${this.booster} `;
                 break;
             default:
-                smoothieInformation += `Your smoothie booster is ${booster} `;
+                smoothieInformation += `Your smoothie booster is ${this.booster} `;
         }
     }
     //Targeting the Ice
-    if(ice){
-        switch(ice){
+    if(this.ice){
+        switch(this.ice){
             case 'no"':
                 smoothieInformation += `Your smoothie has ice `;
                 break;
@@ -158,7 +158,7 @@ class Smoothie {
    //NOTE: updating the paraghraph using textCOntent and visability
    //from line 31-  <p id="smoothie-order"></p>
    document.getElementById("smoothie-order").textContent = smoothieInformation;
-   document.getElementById("smoothie-order").style.visability = "visible";
+   document.getElementById("smoothie-order").style.visibility = "visible";
    console.log(smoothieInformation); //show on console
     }
 }
@@ -167,17 +167,16 @@ class Smoothie {
 document.getElementById("order").addEventListener("click", function(){
     //STEP SEVEN: as well as taregting the clicked values
     //NOTE: using the values from the radio and checkbox
-    var fruit = document.querySelector('input[name="fruit"]');
-    var booster = document.querySelector('input[name="booster"]');
-    var ice = document.querySelector('input[name="ice"]');
-    var quantity = document.querySelector('input[name="quantity"]');
-    var topping = document.querySelector('input[name="topping"]');
-    var liquid = document.querySelector('input[name="liquid"]');
-    var size = document.querySelector('input[name="size"]');
+    var fruit = document.querySelector('input[name="fruit"]:checked');
+    var booster = document.querySelector('input[name="booster"]:checked');
+    var ice = document.querySelector('input[name="ice"]:checked');
+    var topping = document.querySelector('input[name="topping"]:checked');
+    var liquid = document.querySelector('input[name="liquid"]:checked');
+    var size = document.querySelector('input[name="size"]:checked');
     
     // STEP EIGHT: after being accesed from the objects shows order information
     //from class Smoothie Instatiate  based on the  constructor - reference from coffee.js (step2)
-    let smoothie = new Smoothie(size,fruit,liquid,topping,booster,ice,quantity);
+    let smoothie = new Smoothie(size,fruit,liquid,topping,booster,ice);
     smoothie.getOrderSmoothie();
   
 
