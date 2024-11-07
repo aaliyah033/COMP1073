@@ -142,16 +142,16 @@ class Smoothie {
     if(this.ice){
         switch(this.ice){
             case 'no"':
-                smoothieInformation += `Your smoothie has ice `;
+                smoothieInformation += `Your smoothie has no ice `;
                 break;
             case 'regular':
-                smoothieInformation += `Your smoothie does not have ice `;
+                smoothieInformation += `Your smoothie has regular ice`;
                 break;
             case 'extra':
-                smoothieInformation += `Your smoothie does not have ice `;
+                smoothieInformation += `Your smoothie has extra ice `;
                 break;
             default:
-                smoothieInformation += `Your smoothie has ice `;
+                smoothieInformation += `Your smoothie has no ice `;
         }
     }
     // STEP FIVE: to make the paraghraph visible from the user chose
@@ -173,6 +173,34 @@ document.getElementById("order").addEventListener("click", function(){
     var topping = document.querySelector('input[name="topping"]:checked');
     var liquid = document.querySelector('input[name="liquid"]:checked');
     var size = document.querySelector('input[name="size"]:checked');
+
+    //adding an if statement that will check if nothing and will set value --- this to fix and get the output
+    if(fruit !== null){
+        fruit = fruit.value;
+        }
+        else{
+            fruit = '';
+            }
+    if(booster !== null){
+        booster = booster.value;
+        }
+        else{booster = ''; }
+    if(ice !== null){
+        ice = ice.value;
+        }
+        else{ice = ''; }
+    if(topping !== null){
+        topping = topping.value;
+        }
+        else{topping = ''; }
+    if(liquid !== null){
+        liquid = liquid.value;
+        }
+        else{liquid = ''; }
+    if(size !== null){
+        size = size.value;
+        }
+        else{size = ''; }           
     
     // STEP EIGHT: after being accesed from the objects shows order information
     //from class Smoothie Instatiate  based on the  constructor - reference from coffee.js (step2)
