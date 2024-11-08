@@ -24,7 +24,7 @@ h1,h2,h3, p{
 header{
     padding: 30px;
     text-align: center;
-
+    background-color: #c27913; /* for testing*/
 }
 
 /* for body */
@@ -39,4 +39,46 @@ body{
     text-align: center;
     padding: 20px;
     margin: 10px;
+    background-color: #c21313; /* for testing*/
+}
+
+/* for the containe - left for the output and right for the form */
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 20px;
+}
+
+/* for both sides making them same size */
+.left-side, .right-side {
+    width: 45%;
+    padding: 20px;
+    margin: 20px;
+    /* border: 1px solid black; */
+}
+
+/* for left side */
+.left-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(229, 91, 17);
+}
+.left-side img{
+    width: 300px;
+    height: 400px;
+    margin: 10px;
+    object-fit: cover;
+    border-radius: 30px; 
+}
+#smoothie-order{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+    margin: 10px;
+    line-height: 2.5;
 }
