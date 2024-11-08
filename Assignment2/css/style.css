@@ -6,3 +6,37 @@ Jolly Lodger
 Permanent Marker
 Rubik Wet Paint
 */
+
+html {
+    scroll-behavior: smooth;
+    border: none;
+    cursor: pointer;
+}
+
+h1,h2,h3, p{
+    text-align: center;
+    font-size: 1rem;
+    font-family: sans-serif;
+    font-style: bold;
+}
+
+/* for header */
+header{
+    padding: 30px;
+    text-align: center;
+
+}
+
+/* for body */
+body{
+    margin: 0;
+    padding: 0;
+    border:none;
+}
+
+/* for masthead */
+.masthead{
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+}
