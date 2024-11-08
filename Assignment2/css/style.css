@@ -120,3 +120,21 @@ button:hover{
     background-color: rgba(142, 41, 97, 0.7); /* for testing*/
 }
 
+/* for the icons */
+#product-icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: darkolivegreen; /* for testing*/
+    margin: 20px;
+}
+
+#product-icons img{
+    width: 100px;
+    height: 120px;
+   
+}
+
+/* for footer */
+
