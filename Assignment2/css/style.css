@@ -137,4 +137,11 @@ button:hover{
 }
 
 /* for footer */
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(142, 41, 60); /* for testing*/
+   margin: 20px;
+}
+
 
