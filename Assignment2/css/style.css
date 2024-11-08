@@ -82,3 +82,41 @@ body{
     margin: 10px;
     line-height: 2.5;
 }
+
+/* right side */
+.right-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 850px;
+    padding: 20px;
+    background-color: darkolivegreen; /* for testing*/
+
+}
+
+.right-side form div{
+    text-align: center;
+    margin: 10px;
+    padding:10px;
+    border: 3px solid black;
+    border-radius: 10px;  
+    background-color: rgb(41, 142, 130); /* for testing*/
+}
+ /* making when user wants to choose it hovers color*/
+.right-side form div:hover{
+    background-color: rgb(41, 142, 130, 0.7);
+    border-color: blue;
+}
+
+/* for button */
+button{
+    background-color: rgb(41, 43, 142); /* for testing*/
+    border: none;
+    margin: 10px;
+    padding: 20px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgba(142, 41, 97, 0.7); /* for testing*/
+}
+
