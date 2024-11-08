@@ -24,7 +24,10 @@ h1,h2,h3, p{
 header{
     padding: 30px;
     text-align: center;
-    background-color: #c27913; /* for testing*/
+    background: linear-gradient(106.5deg, rgba(255, 215, 185, 0.91) 23%, rgba(223, 159, 247, 0.8) 93%); 
+}
+header h3{
+    font-size: 2.1rem;
 }
 
 /* for body */
@@ -32,65 +35,80 @@ body{
     margin: 0;
     padding: 0;
     border:none;
+    
 }
 
 /* for masthead */
 .masthead{
     text-align: center;
-    padding: 20px;
-    margin: 10px;
-    background-color: #c21313; /* for testing*/
+    height: 50vh;
+    background-image: url("../imgs/smoothie3.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.masthead h1{
+    font-size: 5em;
+    color: #c54c82;
+    text-shadow: 10px 8px 5px rgb(133, 53, 92);
+    letter-spacing: 4px;
+    text-align: center;
 }
 
 /* for the containe - left for the output and right for the form */
 .container{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    padding: 20px;
-    margin: 20px;
+    padding: 60px;
+   
 }
 
 /* for both sides making them same size */
 .left-side, .right-side {
     width: 45%;
-    padding: 20px;
-    margin: 20px;
-    /* border: 1px solid black; */
+   
 }
 
 /* for left side */
 .left-side{
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: rgb(229, 91, 17);
+    background-color: rgb(225, 186, 196);
+    width: 55%;
+    border-radius: 20px;
 }
+.left-side p {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 1.5;
+    margin-right: 20px;
+    white-space: pre-line;
+    color: #8f083e;
+}
+
 .left-side img{
-    width: 300px;
     height: 400px;
     margin: 10px;
     object-fit: cover;
     border-radius: 30px; 
+    
 }
-#smoothie-order{
-    font-size: 30px;
-    font-weight: bold;
-    text-align: left;
-    margin: 10px;
-    line-height: 2.5;
-}
+
 
 /* right side */
 .right-side{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 850px;
     padding: 20px;
-    background-color: darkolivegreen; /* for testing*/
+   
 
 }
 
@@ -98,26 +116,31 @@ body{
     text-align: center;
     margin: 10px;
     padding:10px;
-    border: 3px solid black;
     border-radius: 10px;  
-    background-color: rgb(41, 142, 130); /* for testing*/
+    background-color: #e498b3e8; 
 }
  /* making when user wants to choose it hovers color*/
 .right-side form div:hover{
-    background-color: rgb(41, 142, 130, 0.7);
-    border-color: blue;
+    background-color: #f8c9d4;
 }
+
+/* for the ckeckbox color */
+input {
+    accent-color: #c3195d; 
+}
+
 
 /* for button */
 button{
-    background-color: rgb(41, 43, 142); /* for testing*/
+    background-color: rgb(241, 132, 157);
     border: none;
     margin: 10px;
-    padding: 20px;
+    padding: 20px 40px;
     cursor: pointer;
+    border-radius: 10px;
 }
 button:hover{
-    background-color: rgba(142, 41, 97, 0.7); /* for testing*/
+    background-color: rgb(248, 201, 212); 
 }
 
 /* for the icons */
@@ -126,7 +149,6 @@ button:hover{
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    background-color: darkolivegreen; /* for testing*/
     margin: 20px;
 }
 
@@ -139,9 +161,13 @@ button:hover{
 /* for footer */
 footer{
     text-align: center;
-    padding: 20px;
-    background-color: rgb(142, 41, 60); /* for testing*/
-   margin: 20px;
+    padding: 30px;
+    background: linear-gradient(106.5deg, rgba(255, 215, 185, 0.91) 23%, rgba(223, 159, 247, 0.8) 93%); 
 }
+footer h4{
+    font-size: 2.1rem;
+}
+
+
 
 
