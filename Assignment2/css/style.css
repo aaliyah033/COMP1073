@@ -1,6 +1,5 @@
 /* fonts to be used from google fonts
 Oi
-Lacquer
 Rubik Dirt
 Jolly Lodger
 Permanent Marker
@@ -28,6 +27,7 @@ header{
 }
 header h3{
     font-size: 2.1rem;
+    font-family: 'Rubik Wet Paint';
 }
 
 /* for body */
@@ -52,9 +52,10 @@ body{
    
 }
 .masthead h1{
+    font-family: 'Oi';
     font-size: 5em;
     color: #c54c82;
-    text-shadow: 10px 8px 5px rgb(133, 53, 92);
+    text-shadow: 10px 8px 5px rgba(8, 2, 5, 0.855);
     letter-spacing: 4px;
     text-align: center;
 }
@@ -84,7 +85,8 @@ body{
     border-radius: 20px;
 }
 .left-side p {
-    font-size: 18px;
+    font-family: 'Jolly Lodger';
+    font-size: 20px;
     font-weight: bold;
     text-align: left;
     line-height: 1.5;
@@ -118,6 +120,8 @@ body{
     padding:10px;
     border-radius: 10px;  
     background-color: #e498b3e8; 
+    font-family:'Permanent Marker';
+    font-size: 15px;
 }
  /* making when user wants to choose it hovers color*/
 .right-side form div:hover{
@@ -138,6 +142,9 @@ button{
     padding: 20px 40px;
     cursor: pointer;
     border-radius: 10px;
+    font-family: 'Rubik Dirt';
+    font-size: 20px;
+    color: rgb(158, 45, 86);
 }
 button:hover{
     background-color: rgb(248, 201, 212); 
@@ -166,6 +173,7 @@ footer{
 }
 footer h4{
     font-size: 2.1rem;
+    font-family: 'Rubik Wet Paint';
 }
 
 
