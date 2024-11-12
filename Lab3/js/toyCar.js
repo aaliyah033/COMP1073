@@ -135,6 +135,99 @@ document.getElementById('view').addEventListener('click', function(){
 
 });
 
+//STEP FIVE: now for the radios and submit buttons 
+//note: but in a funvtion 
+document.getElementById("submit-btn").addEventListener("click", function(){
+  //STEP 5a: get the radio buttons
+  const customizeValue = document.getElementById("choose-car");
+  let selectCar = null; 
+  switch (customizeValue) {
+    case "car1":
+      selectCar = car1;
+      break;
+    case "car2":
+      selectCar = car2;
+      break;
+      case "car3":
+        selectCar = car3;
+        break;
+  }
+  //STEP 5b: get the radio buttons
+  let selectColor = null;
+  let selectBrands = null;
+  let selectYears = null;
+  let selectScale = null;
+  let selectCountry = null;
+
+  //STEP 5c: targeting each radio 
+
+  //for color radio
+  if (document.getElementById('redColor')) {
+    selectedColor = 'red';
+    } else if (document.getElementById('blueColor')) {
+    selectedColor = 'blue';
+    } else if (document.getElementById('greenColor')) {
+    selectedColor = 'green';
+    } else if (document.getElementById('purpleColor')) {
+    selectedColor = 'purple';
+    } else if (document.getElementById('blackColor')) {
+    selectedColor = 'black';
+    }
+
+    //for brand radio
+    if (document.getElementById('brand1')) {
+      selectedBrand = 'Porche';
+      } else if (document.getElementById('brand2')) {
+      selectedBrand = 'Toyota';
+      } else if (document.getElementById('brand3')) {
+      selectedBrand = 'LandRover';
+      } else if (document.getElementById('brand4')) {
+      selectedBrand = 'BMW';
+      } else if (document.getElementById('brand5')) {
+      selectedBrand = 'Jeep';
+      } else if (document.getElementById('brand6')) {
+      selectedBrand = 'Ford';
+      }
+
+      //for year radio
+    if (document.getElementById('year').value === '2024') {
+        selectedYear = '2024';
+        } else if (document.getElementById('year').value === '2011') {
+        selectedYear = '2011';
+        } else if (document.getElementById('year').value === '2003') {
+        selectedYear = '2003';
+        } else if (document.getElementById('year').value === '1990') {
+        selectedYear = '1990';
+        }
+
+        // for scale radio --- 
+    if (document.getElementById('scale1').value === '1:18') {
+      selectedScale = '1:18';
+      } else if (document.getElementById('scale1').value === '1:24') {
+      selectedScale = '1:24';
+      } else if (document.getElementById('scale1').value === '1:32') {
+      selectedScale = '1:32';
+      } else if (document.getElementById('scale1').value === '1:43') {
+      selectedScale = '1:43';
+      } else if (document.getElementById('scale1').value === '1:64') {
+      selectedScale = '1:64';
+      }
+
+      // for Country radio
+    if (document.getElementById('country1')) {
+      selectedCountry = 'USA';
+      } else if (document.getElementById('country2')) {
+      selectedCountry = 'Canada';
+      } else if (document.getElementById('country2')) {
+      selectedCountry = 'Germany';
+      } else if (document.getElementById('country3')) {
+      selectedCountry = 'Japan';
+      } else if (document.getElementById('country4')) {
+      selectedCountry = 'England';
+      }
+
+})
+
 
 
 
