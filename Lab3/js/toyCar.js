@@ -242,7 +242,52 @@ document.getElementById("submit-btn").addEventListener("click", function(){
       if (selectCar){
         selectCar.country = selectedCountry
       }
+
+      displayInventory(selectCar);
 })
+
+//STEP SEVEN: targeting the reset button to clear everything
+//notes: put in function
+function resetEverything(){
+  
+  //target each radio 
+  document.getElementById('color-red').checked = false;
+    document.getElementById('color-blue').checked = false;
+    document.getElementById('color-green').checked = false;
+    document.getElementById('color-yellow').checked = false;
+    document.getElementById('color-purple').checked = false;
+
+    document.getElementById('brand-toyota').checked = false;
+    document.getElementById('brand-porsche').checked = false;
+    document.getElementById('brand-bmw').checked = false;
+
+    document.getElementById('year-2002').checked = false;
+    document.getElementById('year-1990').checked = false;
+    document.getElementById('year-2008').checked = false;
+
+    document.getElementById('country-germany').checked = false;
+    document.getElementById('country-usa').checked = false;
+    document.getElementById('country-canada').checked = false;
+    document.getElementById('country-japan').checked = false;
+
+    document.getElementById('scale-18').checked = false;
+    document.getElementById('scale-24').checked = false;
+    document.getElementById('scale-32').checked = false;
+    document.getElementById('scale-43').checked = false;
+    document.getElementById('scale-64').checked = false;
+
+//now for the deatils as well 
+const inventoryDisplay = document. getElementById('result-view');
+while (inventoryDisplay.firstChild){
+  inventoryDisplay.removeChild(inventoryDisplay.firstChild); // used the firstchild to remove all elements shown/used
+}
+
+}
+
+//STEP EIGHT: adding the event listener to the reset button
+document.getElementById('reset-button').addEventListener('click', resetEverything);
+
+
 
 
 
