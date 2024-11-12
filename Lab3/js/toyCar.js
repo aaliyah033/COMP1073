@@ -226,6 +226,22 @@ document.getElementById("submit-btn").addEventListener("click", function(){
       selectedCountry = 'England';
       }
 
+      //STEP SIX: now to update the properties of the car 
+      if ( selectCar){
+        selectCar.color = selectColor
+      }
+      if (selectCar){
+        selectCar.year = selectedYear
+      }
+      if (selectCar){
+        selectCar.brand = selectedBrand
+      }
+      if (selectCar){
+        selectCar.scale = selectedScale
+      }
+      if (selectCar){
+        selectCar.country = selectedCountry
+      }
 })
 
 
