@@ -1,0 +1,75 @@
+html {
+    scroll-behavior: smooth;
+    border: none;
+    cursor: pointer;
+}
+body{
+    font-family: Arial, sans-serif;
+  
+}
+h3{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+
+}
+.car-Center{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+   
+}
+.information{
+    flex: 0.9;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+label  {
+    display: block;
+    margin-bottom: 10px;
+  }
+  input, select {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  button {
+    width: 40%;
+    height: 4%;
+    padding: 10px;
+    background-color: #05286e;
+    color: white;
+    border: none;
+    border-radius: 20px;
+  }
+  #color-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 30px;
+  }
+  #brand-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 30px;
+  }
+  #country-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 30px;
+  }
+  #year-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 30px;
+  }
+  #scale-customize{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 30px;
+  }
