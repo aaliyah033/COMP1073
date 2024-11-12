@@ -112,5 +112,29 @@ function displayInventory(Car){
    }
 }
 
+//STEP FOUR: now add event listener for the view button of the details side
+document.getElementById('view').addEventListener('click', function(){
+  //targeting the drop down 
+  const dropdownValue = document.getElementById('choose-car');
+
+  //STEP 4b: will find the car from the dropdown
+  let selectCar = null; //so that its empty when showing
+  switch (dropdownValue) {
+    case "car1":
+      selectCar = car1;
+      break;
+      case "car2":
+        selectCar = car2;
+        break;
+        case "car3":
+          selectCar = car3;
+          break;
+  }
+ //STEP 4c: display the car details
+ displayInventory(selectCar);
+
+});
+
+
 
 
