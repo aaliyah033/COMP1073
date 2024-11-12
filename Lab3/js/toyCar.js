@@ -23,10 +23,11 @@ class ToyCars {
 
 //STEP TWO: default car inventory
 var inventoryCars=[
-  new ToyCars("Ford Bronco","yellow","Ford","Canada","1:24","travel car","plastic","31530OR","4","2021","31530OR-MAI-ORANGE","4","Yes","2"),
-  new ToyCars("super Beetle Convertable","blue","Volkswagen","1:18","classic car","copper","680334688657","4","Germny","1957","JLSP107A-JL-BLUE","2","NO","2"),
-  new ToyCars("Audi RS","White","Audi","USA","1:18","sports car","plastic","680334691930","4","USA","2020","GT302-GT-WHITE","4","Yes","4")
+  new ToyCars("Ford Bronco", "yellow", "Ford", "USA", "1:24", "plastic", "31530OR", "4", "UAE","2020","31530OR-MAI-ORANGE", "4", "Yes", "2"),
+  new ToyCars("super Beetle Convertible", "blue", "Volkswagen", "German", "1:18", "copper", "680334688657", "4", "UK","1957", "JLSP107A-JL-BLUE", "2", "No", "2"),
+  new ToyCars("Audi RS", "White", "Audi", "USA", "1:18","plastic", "680334691930", "4","China", "2020", "GT302-GT-WHITE", "4", "Yes", "4")
 ];
+
 
 //STEP THREE: Add a function to display the inventory details
 function displayInventory(ToyCars){
@@ -80,7 +81,7 @@ function displayInventory(ToyCars){
    }
    if (ToyCars.tire){
     const tire = document.createElement('p');
-    tire.textContent = `Price: ${ToyCars.tire}`;
+    tire.textContent = `Tire: ${ToyCars.tire}`;
     outputInventory.appendChild(tire);
    }
    if (ToyCars.country){
@@ -246,34 +247,9 @@ document.getElementById("submit-btn").addEventListener("click", function(){
 function resetEverything(){
   
   //target each radio 
-  document.getElementById('redColor').checked = false;
-    document.getElementById('blueColor').checked = false;
-    document.getElementById('greenColor').checked = false;
-    document.getElementById('purpleColor').checked = false;
-    document.getElementById('blackColor').checked = false;
-
-    document.getElementById('brand1').checked = false;
-    document.getElementById('brand2').checked = false;
-    document.getElementById('brand3').checked = false;
-    document.getElementById('brand4').checked = false;
-    document.getElementById('brand5').checked = false;
-    document.getElementById('brand6').checked = false;
-
-    document.getElementById('year1').checked = false;
-    document.getElementById('year2').checked = false;
-    document.getElementById('year3').checked = false;
-    document.getElementById('year4').checked = false;
-
-    document.getElementById('country1').checked = false;
-    document.getElementById('country2').checked = false;
-    document.getElementById('country3').checked = false;
-    document.getElementById('country4').checked = false;
-
-    document.getElementById('scale1').checked = false;
-    document.getElementById('scale2').checked = false;
-    document.getElementById('scale3').checked = false;
-    document.getElementById('scale4').checked = false;
-    document.getElementById('scale5').checked = false;
+  const radioButtons = document.querySelectorAll('input[type="radio"]');
+for (let i = 0; i < radioButtons.length; i++) {
+  radioButtons[i].checked = false;}
 
 //now for the deatils as well 
 const inventoryDisplay = document. getElementById('result-view');
@@ -284,7 +260,7 @@ while (inventoryDisplay.firstChild){
 }
 
 //STEP EIGHT: adding the event listener to the reset button
-document.getElementById('reset-button').addEventListener('click', resetEverything);
+document.getElementById('reset-btn').addEventListener('click', resetEverything);
 
 
 
