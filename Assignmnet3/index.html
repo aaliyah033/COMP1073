@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Country Information</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/trial.js" defer></script>
+
+</head>
+<body>
+    <h1>City and country Information</h1>
+    <!--Reaserch want to do: API's of TimeZone,weather, and The place Exchnage Rates: 
+        Google Maps Time Zone API, OpenWeather API, ExchangeRate-API
+        I want user to be able to enter a countries name and will provide all details from the API of the Countries 
+        the countries details: API for - Time zone details, weather details, and currency exchange rate details
+    -->
+    <p>Enter city and country name and get all informations on the countries Time zone,  weather, and exchnage rate</p>
+   <div id="country-info">
+    <form >
+        <h2>Chosen Country Details</h2>
+        <input type="text" id="city" name="city" placeholder="Enter city name">
+        <input type="text" id="country" name="country" placeholder="Enter country name">
+        <button type="button" id="search-btn">Get Details</button>
+        <div id="detail-results"></div>
+    </form>
+    </div>
+    
+</body>
+</html>
