@@ -50,6 +50,12 @@ function getCityCountryInfo() {
             fetch(exchangeRateUrl)
             .then(exchangeRateResponse => exchangeRateResponse.json())//converts to the JSON
             .then(exchangeRateDetails => {
+                 //STEP 5: Displaying details 
+                 let APIUrl = chosenCountry(openWeatherDetails,googleMapsDetails,exchangeRateDetails);
+                 resultAiOutput.textContent = APIUrl;
+                 resultAiOutput.style.visibility = 'visible'; })
+                 
+
                
 
 
