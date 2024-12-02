@@ -28,6 +28,22 @@ function getCityCountryInfo() {
         return;
     }
     
+    //STEP 4: API call to get location details
+
+        //STEP 4a: weather details -- using fetch (lesson-11)
+        let openWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${openWeatherAPIKey}`;
+        fetch(openWeatherUrl)
+        .then(openWeatheresponse => openWeatheresponse.json())//converts to the JSON (the outout as from the document)
+        .then(openWeatherResponse => { 
+            //since the google maps requre the lat & lon and from information pulled from the openWeather.
+            //NOTES: trying to connect three API's together...
+            const lat = openWeatherResponse.coord.lat; //from JSON format API response example - "coord" lat & lon: 
+            const lon = openWeatherResponse.coord.lon; //from JSON format API response example - "coord" lat & lon:
+
+        
+
+        
+            
 
     
 
