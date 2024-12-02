@@ -34,7 +34,7 @@ function getCityCountryInfo() {
         let openWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${openWeatherAPIKey}`;
         fetch(openWeatherUrl)
         .then(openWeatheresponse => openWeatheresponse.json())//converts to the JSON (the outout as from the document)
-        .then(openWeatherResponse => { 
+        .then(openWeatherDetails => { 
             //since the google maps requre the lat & lon and from information pulled from the openWeather.
             //NOTES: trying to connect three API's together...
             const lat = openWeatherResponse.coord.lat; //from JSON format API response example - "coord" lat & lon: 
@@ -44,8 +44,16 @@ function getCityCountryInfo() {
         let googleMapsUrl = `https://maps.googleapis.com/maps/api/timezone/json?location=${lat},${lon}&timestamp&key=${GOOGLE_MAPS_API_KEY}`; // added lat and lon from the openWeatherUrl
         fetch(googleMapsUrl) 
         .then(googleMapsResponse => googleMapsResponse.json())//converts to the JSON 
-        .then(googleMapsResponse => {
+        .then(googleMapsDetails => {
             //STEP 4c: ExchangeRate details -- using fetch (lesson-11)
+            let exchangeRateUrl = `https://v6.exchangerate-api.com/v6/${exchangeRateAPIKey}/latest/USD`;
+            fetch(exchangeRateUrl)
+            .then(exchangeRateResponse => exchangeRateResponse.json())//converts to the JSON
+            .then(exchangeRateDetails => {
+               
+
+
+            
 
 
         
