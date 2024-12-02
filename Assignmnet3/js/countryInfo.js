@@ -124,7 +124,9 @@ function resetButton(){
     resultAiOutput.textContent = ''; //this will clear the results provided  
 }
 
-
+//STEP 9: Now for the event listener for the two buttons (reset and search)
+document.getElementById('resetBtn').addEventListener('click',resetButton);
+document.getElementById('searchBtn').addEventListener('click',getCityCountryInfo);
 
 
 
