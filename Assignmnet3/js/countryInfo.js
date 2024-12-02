@@ -116,6 +116,17 @@ function chosenCountry (openWeatherDetails,googleMapsDetails,exchangeRateDetails
 
 }
 
+//STEP 8: Now for reset button 
+function resetButton(){
+    cityApi.value = ''; //this will clear the city input 
+    countryApi.value = ''; //this will clear the country input
+    resultAiOutput.value = ''; //this will clear result
+    resultAiOutput.textContent = ''; //this will clear the results provided  
+}
+
+
+
+
 
                  
 
