@@ -74,9 +74,47 @@ function getCityCountryInfo() {
                             resultAiOutput.style.visibility = 'visible';
                             console.log('Error:',error)
                             });
-                        }
+}
 
+//STEP 7: Function for Displaying/showing  all the details from the searched country & city 
+//NOTE: The API that shows the (location, weather, time zone, currency), this is to basically return all the values...
+//let APIUrl = chosenCountry(openWeatherDetails,googleMapsDetails,exchangeRateDetails);
+function chosenCountry (openWeatherDetails,googleMapsDetails,exchangeRateDetails){
+    
+    let APIUrl = 
+    `Information entered:\n`+
+    `City: ${openWeatherDetails.name}\n`+
+    `Country: ${openWeatherDetails.country}\n\n` +
 
+    `Weather Information\n` +
+    `Weather Description: ${openWeatherDetails.weather[0].description}\n` +
+    `Temperature: ${openWeatherDetails.main.temp}°C\n` +
+    `Feels Like: ${openWeatherDetails.main.feels_like}°C\n` +
+    `Humidity: ${openWeatherDetails.main.humidity}%\n` +
+    `Wind Speed: ${openWeatherDetails.wind.speed} m/s\n` +
+    `Clouds: ${openWeatherDetails.clouds.all}\n\n` +
+
+    `Time Zone Information\n` +
+    `Time Zone: ${googleMapsDetails.timezone}\n` +
+    `Time Zone ID: ${googleMapsDetails.timezoneId}\n` +
+    `Time Zone Name: ${googleMapsDetails.timezoneName}\n\n` +
+
+    `Currency Information\n` +
+    `Base Currency: ${exchangeRateDetails.base_code}\n` + //from the document "base_code": "USD",
+    //currency will use: //USD,EUR,GBP,JPY,AUD,CAD,TZS,AED
+    `USD Rate: ${exchangeRateDetails.conversion_rates}`//"conversion_rates":
+    `EUR Rate: ${exchangeRateDetails.conversion_rates}`
+    `GBP Rate: ${exchangeRateDetails.conversion_rates}`
+    `JPY Rate: ${exchangeRateDetails.conversion_rates}`
+    `AUD Rate: ${exchangeRateDetails.conversion_rates}`
+    `CAD Rate: ${exchangeRateDetails.conversion_rates}`
+    `TZS Rate: ${exchangeRateDetails.conversion_rates}`
+    `AED Rate: ${exchangeRateDetails.conversion_rates}`
+
+    //For Testing...
+    console.log(APIUrl);
+
+}
 
 
                  
