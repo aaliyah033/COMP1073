@@ -55,6 +55,31 @@ function getCityCountryInfo() {
                  resultAiOutput.textContent = APIUrl;
                  resultAiOutput.style.visibility = 'visible'; })
                  
+                 //STEP 6: Error added for each API 
+                 //now for the ERRORS - (lesson-11, nytimes.js)
+                 .catch(error => { 
+                    resultAiOutput.textContent = `Error: No currency information.`;
+                    resultAiOutput.style.visibility = 'visible';
+                    console.log('Error:',error)
+                 });
+                    })
+                    .catch(error => {
+                        resultAiOutput.textContent = `Error: No timezone information.`
+                        resultAiOutput.style.visibility = 'visible';
+                        console.log('Error:',error)
+                        });
+                        })
+                        .catch(error => {
+                            resultAiOutput.textContent = `Error: No weather information.`
+                            resultAiOutput.style.visibility = 'visible';
+                            console.log('Error:',error)
+                            });
+                        }
+
+
+
+
+                 
 
                
 
@@ -69,4 +94,3 @@ function getCityCountryInfo() {
 
     
 
-}
