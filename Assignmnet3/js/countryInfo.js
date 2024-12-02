@@ -16,3 +16,19 @@ const countryApi = document.querySelector('#country');
 const searchBtnApi = document.querySelector('#searchBtn');
 const resetBtnApi = document.querySelector('#resetBtn');
 const resultAiOutput = document.querySelector('#resultsDetail');
+
+//STEP 3: Location detail funcation
+function getCityCountryInfo() {
+    //STEP 3a: input validation --- this is to first check if user enters city and country (since i'm doing about countires and cities)
+    const cityValidate = cityApi.value.trim();
+    const countryValidate = countryApi.value.trim();
+    if (cityValidate === '' || countryValidate === '') {
+        resultAiOutput.textContent = 'Please you have to enter both COUNTRY & CITY name.'; 
+        resultAiOutput.style.visibility = 'visible'; //making the mssh visible
+        return;
+    }
+    
+
+    
+
+}
