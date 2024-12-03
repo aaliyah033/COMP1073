@@ -1,5 +1,5 @@
 
-Reference cite used class Lessons for the code:
+Reference cite used class Lessons for the code
 
 Current weather data - openweathermap. (n.d.-a). https://openweathermap.org/current 
 Exchangerate. (n.d.). https://v6.exchangerate-api.com/v6/1919158a48acdeb15229e86d/latest/USD 
