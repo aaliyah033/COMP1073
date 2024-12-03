@@ -12,6 +12,7 @@ Members. (n.d.). https://home.openweathermap.org/api_keys
 Sign in. ExchangeRate. (n.d.-a). https://app.exchangerate-api.com/keys 
 Standard requests. ExchangeRate. (n.d.-b). https://www.exchangerate-api.com/docs/standard-requests 
 Current weather data - openweathermap. (n.d.-a). https://openweathermap.org/current 
+MozDevNet. (n.d.). String.prototype.trim() - javascript: MDN. MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trim 
 
 THE API I USED: 
 OpenWeather API key - with their documentation
