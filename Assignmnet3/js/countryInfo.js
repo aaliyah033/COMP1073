@@ -100,7 +100,7 @@ function getCityCountryInfo() {
 function chosenCountry (openWeatherDetails, googleMapsDetails, exchangeRateDetails){
     
     return (
-    `Information entered:\n`+
+    `Information entered\n`+
     `City: ${openWeatherDetails.name}\n`+
     `Country: ${openWeatherDetails.sys.country}\n\n` +
 
