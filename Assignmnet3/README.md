@@ -13,6 +13,8 @@ Sign in. ExchangeRate. (n.d.-a). https://app.exchangerate-api.com/keys
 Standard requests. ExchangeRate. (n.d.-b). https://www.exchangerate-api.com/docs/standard-requests 
 Current weather data - openweathermap. (n.d.-a). https://openweathermap.org/current 
 MozDevNet. (n.d.). String.prototype.trim() - javascript: MDN. MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trim 
+MozDevNet. (n.d.-a). Date.now() - javascript: MDN. MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/now 
+MozDevNet. (n.d.-c). Throw - javascript: MDN. MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw 
 
 THE API I USED: 
 OpenWeather API key - with their documentation
