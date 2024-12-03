@@ -1,0 +1,13 @@
+html {
+    scroll-behavior: smooth;
+    border: none;
+    cursor: pointer;
+}
+
+h1,h2, p{
+    text-align: center;
+    font-size: 1rem;
+    font-family: sans-serif;
+    font-style: bold;
+}
+
